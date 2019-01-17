@@ -7,3 +7,4 @@
 Let's have some examples :
 
 - **Il a une légère dyslexie le bonhomme !** : slexie
+- **On y va directement** : rectement
