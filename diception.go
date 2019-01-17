@@ -5,9 +5,9 @@ import (
 	"strings"
 )
 
-// OMG is a dumb french function that responds if a word is starting with `di`.
+// OMG is a dumb function that responds if a word starting with `di` is in a french sentence.
 func OMG(s string) string {
-	re := regexp.MustCompile("(di\\w+|dy\\w+)")
+	re := regexp.MustCompile("(di[a-z]{2,}|dy[a-z]{2,})")
 
 	sm := re.FindString(s)
 

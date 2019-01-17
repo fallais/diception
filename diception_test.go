@@ -11,6 +11,8 @@ func TestOMG(t *testing.T) {
 		"J'suis chaud pour une bonne dichotomie !": "chotomie",
 		"Il a une légère dyslexie le bonhomme !": "slexie",
 		"dithyrambique": "thyrambique",
+		"dite": "te",
+		"dis": "",
 	}
 
 	for key, value := range solutions {
