@@ -14,8 +14,12 @@ func TestOMG(t *testing.T) {
 		"J'suis chaud pour une bonne dichotomie !": "chotomie",
 		"Il a une légère dyslexie le bonhomme !":   "slexie",
 		"dithyrambique":                            "thyrambique",
+		"Dithyrambique":                            "thyrambique",
 		"dite":                                     "te",
 		"dis":                                      "",
+		"Il est cool ce petit Adibou !": "bou",
+		"endiguer": "guer",
+		"Elle est d'ici ou bien de là-bas..": "ci",
 	}
 
 	for key, value := range solutions {
@@ -33,7 +37,7 @@ func TestOMG(t *testing.T) {
 		parameters.Add("s", key)
 		reqURL.RawQuery = parameters.Encode()
 
-		// Create the request
+		// Create the requestcd ..
 		req, err := http.NewRequest("GET", reqURL.String(), nil)
 		if err != nil {
 			t.Fatal("Error while creating the request")
@@ -48,7 +52,7 @@ func TestOMG(t *testing.T) {
 		}
 
 		if rr.Body.String() != value {
-			t.Errorf("handler returned unexpected body: got %v want %v", rr.Body.String(), value)
+			t.Errorf("handler returned unexpected body: got [%v] want [%v]", rr.Body.String(), value)
 		}
 	}
 }
