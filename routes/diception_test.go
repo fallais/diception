@@ -10,8 +10,8 @@ import (
 // TestOMG tests the OMG function.
 func TestOMG(t *testing.T) {
 	solutions := map[string]string{
-		"Martine dirige le pays !":                 "rige",
-		"J'suis chaud pour une bonne dichotomie !": "chotomie",
+		"Martine dirige le pays":                 "rige",
+		"En avant pour une bonne dichotomie !": "chotomie",
 		"Il a une légère dyslexie le bonhomme !":   "slexie",
 		"dithyrambique":                            "thyrambique",
 		"Dithyrambique":                            "thyrambique",
